@@ -1,0 +1,26 @@
+{
+  "name": "workout-plan-agent-worker",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/pavielkolpakov/workout-plan-agent-worker#readme",
+  "bugs": {
+    "url": "https://github.com/pavielkolpakov/workout-plan-agent-worker/issues"
+  },
+  "scripts": {
+    "start:worker": "tsx workers/workout_plan.worker.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.89",
+    "@langfuse/otel": "^4.6.0",
+    "@langfuse/tracing": "^4.6.0",
+    "@opentelemetry/sdk-node": "^0.211.0",
+    "ai": "^5.0.129",
+    "drizzle-orm": "^0.45.1",
+    "drizzle-zod": "^0.8.3",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "postgres": "^3.4.7"
+  }
+}
